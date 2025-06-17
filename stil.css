@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "PaolaBabic";
+  src: url("PaolaBabic.ttf");
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("pozadina.jpg"); 
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; 
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Naslovi */
+
+h1 {  
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FF1493; 
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h1.paola-font {
+  font-family: "PaolaBabic", sans-serif;
+  font-size: 3.5em; 
+}
+
+h2, h3, h4 {
+	font-size: 2em;
+    color: #FF1493;
+    margin-top: 30px;
+}
+
+/* Paragrafi i tekst */
+p {
+    line-height: 1.6;
+    font-size: 1.2em;
+	color: color: #000;
+    margin-bottom: 20px;
+}
+
+mark {
+    background-color: #ffe0f0; 
+    padding: 2px 4px;
+}
+
+i {
+    color: #00008B; 
+}
+
+/* Navigacija i linkovi */
+nav {
+    background-color: #e4e9fb;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+nav p {
+    font-weight: bold;
+    color: #4b6cb7;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 5px 0;
+}
+
+a {
+    color: #00008B; /* tamnoplava */
+    text-decoration: underline;
+}
+
+/* VEKTORSKA GRAFIKA - posebni stil */
+ul.vektorska-grafika {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 17px;
+  list-style: none;
+  padding: 0;
+}
+
+ul.vektorska-grafika li {
+  background-color: transparent; 
+  border: none;                  
+  padding: 0;                    
+}
+
+ul.vektorska-grafika li a {
+	color: #00008B; /* tamnoplava */
+	text-decoration: underline;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+	text-transform: none;
+}
+
+ul.vektorska-grafika li a:hover {
+  color: #000080; 
+  text-decoration: underline;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+    color: #7baedc;
+}
+
+/* Liste */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+img {
+	width: 300px;
+	height: 300px;
+    object-fit: cover;
+}
+img.V6 {
+  width: 400px;  
+  height: auto;  
+}
+img.V61 {
+  width: 400px;  
+  height: auto;  
+}
+img.V7 {
+  width: 250px;  
+  height: 350px;  
+}
+
+img.pz2 {
+  width: 400px;  
+  height: auto;  
+}
+
+<style>
+	/*korištenje web fontova*/
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+	/*korištenje nesistemskih fontova - vasi fontovi s vjezbi*/
+	@font-face {
+    font-family: "PaolaBabic";
+    src:url("PaolaBabic.ttf"); /* ukoliko se ttf font ne nalazi u istoj mapi kao i html tada treba navesti i ime_mape/ime_fonta.ttf */
+	}
+	ul {	/*centriranje*/
+			padding:20px; 
+			margin-left: auto; 
+			margin-right:auto;  
+			width: 300px;
+			} 
+	li {	display:inline; /*prikaz u jednom redu*/
+			background-color:LightCoral;
+			padding:20px;
+			border: 2px solid IndianRed;
+		}
+	li:active {background-color:IndianRed;} /*kada kliknemo na li mijenja se boja*/
+		
+	li a {	color:white; 
+			font-family: "CabinSketch", sans-serif; 
+			/*font-family: "Montserrat", sans-serif; */
+			text-transform: uppercase;
+			}
+	li a:link {text-decoration:none;}
+	li a:hover {text-decoration:underline;}
+	
+	</style>
