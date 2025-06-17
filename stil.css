@@ -121,28 +121,104 @@ li {
     margin-bottom: 5px;
 }
 
-img {
-	width: 300px;
-	height: 300px;
-    object-fit: cover;
-}
-img.V6 {
-  width: 400px;  
-  height: auto;  
-}
-img.V61 {
-  width: 400px;  
-  height: auto;  
-}
-img.V7 {
-  width: 250px;  
-  height: 350px;  
+.galerija {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 140px;
+    padding: 20px;
 }
 
-img.pz2 {
-  width: 400px;  
-  height: auto;  
+.slika-blok {
+    text-align: center;
+    width: 200px;
 }
+
+.slika-blok img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slika-blok p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #555;
+    font-family: Arial, sans-serif;
+}
+
+
+.piksel-galerija {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.piksel-galerija figure {
+    width: 300px; /* širina osnovnog bloka */
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+
+.piksel-galerija img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.piksel-galerija img:hover {
+    transform: scale(1.05);
+}
+
+/* Specifične veličine za pojedine slike */
+.piksel-galerija img.V61 {
+    width: 400px;
+    height: auto;
+}
+
+.piksel-galerija figure.V61 {
+    width: 400px;
+}
+
+.piksel-galerija figure.V6 {
+    flex-basis: 100%;    
+    display: flex;       
+    justify-content: center; 
+}
+
+.piksel-galerija figure.V6 img.V6 {
+    width: 400px;  
+    height: auto;
+}
+ 
+}
+
+.piksel-galerija img.V7 {
+    width: 250px;
+    height: 350px;
+}
+
+.piksel-galerija figure.V7 {
+    width: 250px;
+}
+
+.piksel-galerija img.pz2 {
+    width: 400px;
+    height: auto;
+}
+
+.piksel-galerija figure.pz2 {
+    width: 400px;
+}
+
 
 <style>
 	/*korištenje web fontova*/
@@ -156,7 +232,7 @@ img.pz2 {
 			padding:20px; 
 			margin-left: auto; 
 			margin-right:auto;  
-			width: 300px;
+			width: 550px;
 			} 
 	li {	display:inline; /*prikaz u jednom redu*/
 			background-color:LightCoral;
